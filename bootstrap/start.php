@@ -25,12 +25,10 @@ $app->redirectIfTrailingSlash();
 | given environment, then we will automatically detect it for you.
 |
 */
-$env = $app->detectEnvironment(array(
-
-	'development' => array('localhost'),
-
-));
-
+$env = $app->detectEnvironment(function()
+{
+    return getenv('ENV') ?: 'development';
+});
 /*
 |--------------------------------------------------------------------------
 | Bind Paths
