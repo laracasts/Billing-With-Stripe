@@ -4,7 +4,8 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+		"stripe/stripe-php": "1.8.3"
 	},
 	"require-dev": {
         "way/generators": "dev-master"
