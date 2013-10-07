@@ -6,6 +6,10 @@
 
     <body>
 
+    <div class="container">
+        @yield('content')
+    </div>
+
     <script src="https://js.stripe.com/v2/"></script>
 
     </body>
