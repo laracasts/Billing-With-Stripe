@@ -4,7 +4,7 @@
 
 <h1>Buy For $10</h1>
 
-{{ Form::open() }}
+{{ Form::open(['id' => 'billing-form']) }}
     <div class="form-row">
         <label>
             <span>Card Number:</span>
@@ -30,7 +30,14 @@
     <div>
         {{ Form::submit('Buy Now') }}
     </div>
+
+    <div class="payment-errors"></div>
 {{ Form::close() }}
 
+
+@stop
+
+@section('footer')
+    <script src="/js/billing.js"></script>
 @stop
 
