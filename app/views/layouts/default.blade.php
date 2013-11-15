@@ -7,6 +7,12 @@
 
     <body>
 
+    @if (Session::has('flash_message'))
+        <div class="flash_message">
+            {{ Session::get('flash_message') }}
+        </div>
+    @endif
+
     <div class="container">
         @yield('content')
     </div>

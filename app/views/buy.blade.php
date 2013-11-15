@@ -27,6 +27,13 @@
         </label>
     </div>
 
+    <div class="form-row">
+        <label>
+            <span>Email Address:</span>
+            <input type="email" id="email" name="email">
+        </label>
+    </div>
+
     <div>
         {{ Form::submit('Buy Now') }}
     </div>
